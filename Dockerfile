@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM python:slim-buster
 
 RUN apt-get update && apt-get install wget -y
 
