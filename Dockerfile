@@ -1,7 +1,7 @@
-FROM python:buster
+FROM python:3.9-slim-bullseye
 
 RUN apt-get update && apt-get install wget pkg-config build-essential python3-gi python3-gi-cairo gir1.2-gtk-3.0 libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev libpython3-dev libdbus-1-dev libgirepository1.0-dev -y
-RUN pip3 install python-mpd2 musicbrainzngs PyGObject dbus-python
+RUN pip3 install python-mpd2 PyGObject dbus-python musicbrainzngs websocket-client
 
 ARG SNAPCASTVERSION=0.26.0
 ARG SNAPCAST_FILE="0.26.0-1"
