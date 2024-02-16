@@ -1,7 +1,7 @@
 FROM python:3.9-alpine
 
 ARG LIBRESPOT_VERSION=0.4.2-r4
-ARG SNAPCAST_VERSION=0.27.0-r3
+ARG SNAPCAST_VERSION=0.27.0-r4
 
 # Add testing libraries: source of the librespot binary
 RUN echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories
