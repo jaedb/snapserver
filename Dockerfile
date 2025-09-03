@@ -1,6 +1,6 @@
 FROM python:3.11-alpine
 
-ARG LIBRESPOT_VERSION=0.6.0-r0
+ARG LIBRESPOT_VERSION=0.7.1-r0
 ARG SNAPCAST_VERSION=0.31.0-r0
 
 # Add testing libraries: source of the librespot binary
