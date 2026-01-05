@@ -22,7 +22,8 @@ RUN apk add --no-cache \
 RUN python3 -m pip install \
     python-mpd2 \
     musicbrainzngs \
-    websocket-client
+    websocket-client \
+    requests
 
 EXPOSE 1704
 EXPOSE 1780
